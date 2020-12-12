@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -n "$old_dhcp6_aftr" ]; then
+  case "$reason" in
+    STOP6|EXPIRE6)
+    ip link delete ${interface}_dslite
+    ::
+  esac
+fi
